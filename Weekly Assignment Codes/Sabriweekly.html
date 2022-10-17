@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+</head>
+
+<body>
+
+  <!-- Question 1 -->
+
+  <h3>Question 1</h3>
+  <button onclick="generateAnyNumber()">Click Me to Generate</button>
+  <p>Your generated number is: <span id="Output"></span></p>
+
+  <!-- Question 2 -->
+
+  <h3>Question 2</h3>
+  <form>
+    <label for="num">Enter number with decimals</label><br>
+    <input type="text" id="number" value=""><br>
+   
+    <label for="dec">Enter desired round up decimal value</label><br>
+    <input type="text" id="decimal" value=""><br>
+    <br>
+  </form>
+  
+  <button onclick="decimalPlaces()">Click Me to Round it up</button>
+  <p>Answer:  <span id="output2"></span></p>
+
+  <!-- Question 3 -->
+
+  <h3>Question 3</h3>
+
+  <form>
+    <label>Type in any text</label><br>
+    <input type="text" id="initial" value="i am learning js"><br>
+    <label>Type in a word you want to check</label><br>
+    <input type="text" id="final" value=""><br>
+  </form>
+
+  <button onclick="review()">Click Me to Check</button>
+  <p id="output3"></p>
+
+  <!-- Question 4 -->
+
+  <h3>Question 4</h3>
+
+  <form>
+    <label>Insert the year that you would love to check and verify</label><br>
+    <input type="date" id="leap" value=""><br>
+  </form>
+
+  <button onclick="LeapYear()">Click Me to Check</button>
+  <p id="output4"></p>
+
+<!-- Question 5 -->
+
+<h3>Question 5 </h3>
+  <form method ="post">
+    Please Enter Your Pin Number:<input type="text" name="number" id="number" />
+    <input type="button" name="submit" id="submit" onclick="getaction()" value="go"/>
+    <p id="demo"> </p>
+    
+    <div id="options12" style="display:none;">
+    <input type='radio' name='radio' onclick='myfunction(this.value)' value='1'/>Balance
+    <input type='radio' name='radio' onclick='myfunction(this.value)' value='2'/>Withdraw
+    </div>
+    <p id="demo1",></p>
+    
+    <div id="display" style="display:none;">
+    <label>Please Enter Your Withdraw Amount</label>
+    <input type="text" name="amount1" id="amount1" value=""/>
+    <input type="submit" name="submit1" value="submit" onclick="getamount()"/>
+    </div>
+    
+
+    </form>
+
+  
+    <script src="Muhammad_Week1_Weekly_task_1.js"></script>
+</body>
+
+</html>
+
